@@ -1,0 +1,48 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.2.1):
+    - CocoaLumberjack/Default (= 3.2.1)
+    - CocoaLumberjack/Extensions (= 3.2.1)
+  - CocoaLumberjack/Default (3.2.1)
+  - CocoaLumberjack/Extensions (3.2.1):
+    - CocoaLumberjack/Default
+  - IQKeyboardManager (5.0.0)
+  - macros_blocks (0.0.1)
+  - MGSwipeTableCell (1.6.1)
+  - SCNetworkReachability (2.0.5):
+    - SCNetworkReachability/Core (= 2.0.5)
+  - SCNetworkReachability/Core (2.0.5):
+    - macros_blocks (= 0.0.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - CocoaLumberjack
+  - IQKeyboardManager
+  - MGSwipeTableCell
+  - SCNetworkReachability
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
+  IQKeyboardManager: 5edc5bcd5cd3e6982924e6318b82c57099eb0a6c
+  macros_blocks: da2106a0975514e16f3669f2f50a02efaff642cf
+  MGSwipeTableCell: 19a1d65dcc1ceaea42eb44bb2adae32101904514
+  SCNetworkReachability: 14026e754d9abb264c157131539e8e2c2131cb62
+
+PODFILE CHECKSUM: 3e4fd8960f1560d8c74068be1f817ae3bdd1eaa5
+
+COCOAPODS: 1.1.1

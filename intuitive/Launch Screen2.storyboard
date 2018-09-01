@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t2C-pg-doh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ya0-Sh-PAv">
+            <objects>
+                <viewController id="t2C-pg-doh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CGC-9F-PlB"/>
+                        <viewControllerLayoutGuide type="bottom" id="bFa-qC-EuK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5fV-TD-G00">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5i5-I5-EIb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSu-BG-h9c">
+                                        <rect key="frame" x="0.0" y="447" width="375" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="l6O-w2-tge"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1m-1L-ibl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="BPe-u1-lfr">
+                                                <rect key="frame" x="40" y="134" width="295" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="BPe-u1-lfr" secondAttribute="height" multiplier="1000:476" id="IUh-uH-xQi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Th9-rs-u4R">
+                                                <rect key="frame" x="112" y="294" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="41V-nY-x4b"/>
+                                                    <constraint firstAttribute="height" constant="150" id="keh-lM-XOv"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Th9-rs-u4R" firstAttribute="centerX" secondItem="BPe-u1-lfr" secondAttribute="centerX" id="QI7-3Q-JxI"/>
+                                            <constraint firstItem="Th9-rs-u4R" firstAttribute="top" secondItem="BPe-u1-lfr" secondAttribute="bottom" constant="20" id="gfZ-J3-9Us"/>
+                                            <constraint firstAttribute="trailing" secondItem="BPe-u1-lfr" secondAttribute="trailing" constant="40" id="svV-o9-Ef0"/>
+                                            <constraint firstItem="BPe-u1-lfr" firstAttribute="centerY" secondItem="T1m-1L-ibl" secondAttribute="centerY" constant="-20" id="v72-mB-mBP"/>
+                                            <constraint firstItem="BPe-u1-lfr" firstAttribute="leading" secondItem="T1m-1L-ibl" secondAttribute="leading" constant="40" id="ynV-Qz-C3Q"/>
+                                        </constraints>
+                                    </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="intuitivemind-ip.org" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6h2-pl-hcr">
+                                        <rect key="frame" x="113" y="576.5" width="149" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nf-IE-LIP">
+                                        <rect key="frame" x="101.5" y="567" width="171" height="30"/>
+                                        <state key="normal" title="www.intuitivemind-ip.org">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bSu-BG-h9c" firstAttribute="leading" secondItem="5i5-I5-EIb" secondAttribute="leading" id="4n3-24-rEy"/>
+                                    <constraint firstItem="T1m-1L-ibl" firstAttribute="top" secondItem="5i5-I5-EIb" secondAttribute="top" id="9Xq-0y-Fx1"/>
+                                    <constraint firstAttribute="bottom" secondItem="bSu-BG-h9c" secondAttribute="bottom" id="FhZ-9y-W7v"/>
+                                    <constraint firstItem="6h2-pl-hcr" firstAttribute="centerX" secondItem="5i5-I5-EIb" secondAttribute="centerX" id="GiD-9L-1MF"/>
+                                    <constraint firstItem="2nf-IE-LIP" firstAttribute="centerX" secondItem="5i5-I5-EIb" secondAttribute="centerX" id="Oc3-I0-muU"/>
+                                    <constraint firstAttribute="bottom" secondItem="6h2-pl-hcr" secondAttribute="bottom" constant="50" id="V72-oa-QRJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bSu-BG-h9c" secondAttribute="trailing" id="X9n-Fo-zB5"/>
+                                    <constraint firstItem="T1m-1L-ibl" firstAttribute="leading" secondItem="5i5-I5-EIb" secondAttribute="leading" id="d4d-N2-KL0"/>
+                                    <constraint firstAttribute="bottom" secondItem="2nf-IE-LIP" secondAttribute="bottom" constant="50" id="fpQ-3X-SOc"/>
+                                    <constraint firstItem="bSu-BG-h9c" firstAttribute="top" secondItem="T1m-1L-ibl" secondAttribute="bottom" id="gim-M9-w4O"/>
+                                    <constraint firstAttribute="trailing" secondItem="T1m-1L-ibl" secondAttribute="trailing" id="tqV-C2-qnA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.23921568630000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bFa-qC-EuK" firstAttribute="top" secondItem="5i5-I5-EIb" secondAttribute="bottom" id="U00-VD-VZv"/>
+                            <constraint firstAttribute="trailing" secondItem="5i5-I5-EIb" secondAttribute="trailing" id="n13-hO-Vt5"/>
+                            <constraint firstItem="5i5-I5-EIb" firstAttribute="leading" secondItem="5fV-TD-G00" secondAttribute="leading" id="uJI-Fo-VLY"/>
+                            <constraint firstItem="5i5-I5-EIb" firstAttribute="top" secondItem="CGC-9F-PlB" secondAttribute="bottom" id="xyV-c9-y4D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uPT-F2-AEg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iez-ij-EPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_logo.png" width="1000" height="476"/>
+        <image name="main_icon.png" width="420" height="420"/>
+    </resources>
+</document>

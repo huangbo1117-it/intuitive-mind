@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddDialog">
+            <rect key="frame" x="0.0" y="0.0" width="273" height="182"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HH8-Kn-zQc" customClass="RoundCornerView">
+                    <rect key="frame" x="8" y="8" width="257" height="166"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iba-Xo-EJI">
+                            <rect key="frame" x="8" y="14" width="241" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rqk-Yd-9hF">
+                            <rect key="frame" x="8" y="52" width="241" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nk4-Yh-k6S">
+                            <rect key="frame" x="78" y="132" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="NX5-2H-nXW"/>
+                                <constraint firstAttribute="width" constant="100" id="SAL-BJ-0Po"/>
+                            </constraints>
+                            <state key="normal" title="Continue">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onConfirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="DI8-25-Wx5"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qab-pW-oj5">
+                            <rect key="frame" x="8" y="90" width="241" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Qab-pW-oj5" firstAttribute="trailing" secondItem="Rqk-Yd-9hF" secondAttribute="trailing" id="5IN-JV-QD6"/>
+                        <constraint firstItem="Qab-pW-oj5" firstAttribute="top" secondItem="Rqk-Yd-9hF" secondAttribute="bottom" constant="8" id="CfT-uM-hR7"/>
+                        <constraint firstItem="Iba-Xo-EJI" firstAttribute="top" secondItem="HH8-Kn-zQc" secondAttribute="top" constant="14" id="HeK-c7-HbO"/>
+                        <constraint firstItem="Iba-Xo-EJI" firstAttribute="leading" secondItem="HH8-Kn-zQc" secondAttribute="leading" constant="8" id="Pna-hq-y6b"/>
+                        <constraint firstItem="nk4-Yh-k6S" firstAttribute="top" secondItem="Qab-pW-oj5" secondAttribute="bottom" constant="12" id="S97-d6-7GF"/>
+                        <constraint firstAttribute="trailing" secondItem="Iba-Xo-EJI" secondAttribute="trailing" constant="8" id="XvY-jI-rmb"/>
+                        <constraint firstItem="Rqk-Yd-9hF" firstAttribute="top" secondItem="Iba-Xo-EJI" secondAttribute="bottom" constant="8" id="bLe-Oa-MRz"/>
+                        <constraint firstItem="nk4-Yh-k6S" firstAttribute="centerX" secondItem="HH8-Kn-zQc" secondAttribute="centerX" id="d0I-cu-pYc"/>
+                        <constraint firstItem="Rqk-Yd-9hF" firstAttribute="trailing" secondItem="Iba-Xo-EJI" secondAttribute="trailing" id="s7w-2S-mEU"/>
+                        <constraint firstItem="Qab-pW-oj5" firstAttribute="leading" secondItem="Rqk-Yd-9hF" secondAttribute="leading" id="t8a-NL-U4y"/>
+                        <constraint firstItem="Rqk-Yd-9hF" firstAttribute="leading" secondItem="Iba-Xo-EJI" secondAttribute="leading" id="wTw-R0-HVv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backMode">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HH8-Kn-zQc" secondAttribute="trailing" constant="8" id="9Yg-l6-aeE"/>
+                <constraint firstAttribute="bottom" secondItem="HH8-Kn-zQc" secondAttribute="bottom" constant="8" id="SIk-Zg-c4U"/>
+                <constraint firstItem="HH8-Kn-zQc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="VjC-YR-1a9"/>
+                <constraint firstItem="HH8-Kn-zQc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="v1Z-d8-2u6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSubmit" destination="nk4-Yh-k6S" id="8Y6-xm-zvf"/>
+                <outlet property="txtConfirm" destination="Qab-pW-oj5" id="dfp-DR-in7"/>
+                <outlet property="txtPassword" destination="Rqk-Yd-9hF" id="tth-mp-RhW"/>
+                <outlet property="txtUsername" destination="Iba-Xo-EJI" id="zk5-7J-epz"/>
+            </connections>
+            <point key="canvasLocation" x="-623" y="-551"/>
+        </view>
+    </objects>
+</document>

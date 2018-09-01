@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TextOrImageView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YFY-4a-eEL">
+                    <rect key="frame" x="16" y="32.5" width="248" height="35"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsv-gV-MRc" customClass="BorderView">
+                            <rect key="frame" x="0.0" y="0.0" width="99" height="35"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eK4-ec-hFc">
+                                    <rect key="frame" x="0.0" y="0.0" width="99" height="35"/>
+                                    <state key="normal" title="TEXT">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onText:" destination="iN0-l3-epB" eventType="touchUpInside" id="FFW-Y4-Ggr"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="eK4-ec-hFc" firstAttribute="leading" secondItem="Nsv-gV-MRc" secondAttribute="leading" id="IZY-Wr-2xh"/>
+                                <constraint firstItem="eK4-ec-hFc" firstAttribute="top" secondItem="Nsv-gV-MRc" secondAttribute="top" id="OPI-4T-aYm"/>
+                                <constraint firstAttribute="bottom" secondItem="eK4-ec-hFc" secondAttribute="bottom" id="RnQ-QB-UaA"/>
+                                <constraint firstAttribute="trailing" secondItem="eK4-ec-hFc" secondAttribute="trailing" id="VNN-2v-EfB"/>
+                                <constraint firstAttribute="height" constant="35" id="XOu-i4-Gvf"/>
+                                <constraint firstAttribute="width" constant="99" id="jjb-pu-jga"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backMode">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9p-R1-C0Y" customClass="BorderView">
+                            <rect key="frame" x="149" y="0.0" width="99" height="35"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV1-Xq-0GZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="99" height="35"/>
+                                    <state key="normal" title="IMAGE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onImage:" destination="iN0-l3-epB" eventType="touchUpInside" id="6x9-ar-CjD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="99" id="McG-xC-inn"/>
+                                <constraint firstAttribute="height" constant="35" id="QtB-Ec-dA0"/>
+                                <constraint firstAttribute="trailing" secondItem="BV1-Xq-0GZ" secondAttribute="trailing" id="d7R-ki-VR4"/>
+                                <constraint firstAttribute="bottom" secondItem="BV1-Xq-0GZ" secondAttribute="bottom" id="mKC-fO-MnK"/>
+                                <constraint firstItem="BV1-Xq-0GZ" firstAttribute="leading" secondItem="B9p-R1-C0Y" secondAttribute="leading" id="nir-jB-q0U"/>
+                                <constraint firstItem="BV1-Xq-0GZ" firstAttribute="top" secondItem="B9p-R1-C0Y" secondAttribute="top" id="wlQ-m7-YYh"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backMode">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YFY-4a-eEL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="191-yz-SBU"/>
+                <constraint firstItem="YFY-4a-eEL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bnk-oH-3Dm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnImage" destination="BV1-Xq-0GZ" id="Z8C-Qu-6bo"/>
+                <outlet property="btnText" destination="eK4-ec-hFc" id="vlV-P1-1a7"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="-75"/>
+        </view>
+    </objects>
+</document>
